@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@estudo-monorepo/header": ["libs/header/src/index.ts"],
+      "@estudo-monorepo/menu": ["libs/menu/src/index.ts"],
+      "@estudo-monorepo/table": ["libs/src/index.ts"],
+      "@estudo-monorepo/utils": ["utils/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
