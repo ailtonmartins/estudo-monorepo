@@ -1,6 +1,7 @@
 import React from 'react';
 import './menu.module.css';
 
+
 export const Menu: React.FC = () => {
   return (
     <nav>
