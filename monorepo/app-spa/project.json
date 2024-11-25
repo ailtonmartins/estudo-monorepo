@@ -1,0 +1,21 @@
+{
+  "name": "app-spa",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "app-spa/dist/",
+        "configFile": "app-spa/vite.config.ts"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/vite:dev-server",
+      "options": {
+        "buildTarget": "app-spa:build",
+        "configFile": "app-spa/vite.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
